@@ -1,0 +1,145 @@
+2) var section01 = document.createElement('section');
+ //    var ruby01 = document.createElement('ruby');
+ //    var rb = document.createElement('rb');
+ //    rb.innerText = 'Ca';
+ //    ruby01.appendChild(rb);
+ //    var rt = document.createElement('rt');
+ //    rt.innerText = '20';
+ //    ruby01.appendChild(rt);
+ //    var samp01 = document.createElement('samp');
+ //    samp01.innerText = 'Calcium'; 
+ //    section01.appendChild(ruby01);
+ //    section01.appendChild(samp01);
+ //    document.body.appendChild(section01);
+ //    var samp02 = document.createElement('samp');
+ //    samp02.innerText = '40.078'; 
+ //    section01.appendChild(samp02);
+ //    document.body.appendChild(section01);
+3)function createElementTable(abbr, latinName, number, name, weight)
+    // {
+    // 	var section, ruby, rt, rb, samp, ins;
+
+    // 	section = document.createElement('section');
+    // 	ruby = document.createElement('ruby');
+
+    // 	rb = document.createElement('rb');
+    // 	rb.innerText = abbr;
+    // 	rb.title = latinName;
+    // 	ruby.appendChild(rb);
+
+    // 	rt = document.createElement('rt');
+    // 	rt.innerText = number;
+    // 	ruby.appendChild(rt);
+
+    // 	samp = document.createElement('samp');
+    // 	samp.innerText = name;
+
+    // 	ins = document.createElement('ins');
+    // 	ins.innerText = weight;
+    	
+    // 	section.appendChild(ruby);	
+    // 	section.appendChild(samp);
+    // 	section.appendChild(ins);
+    // 	document.body.appendChild(section);
+    // }
+
+
+	// createElementTable ({ abbr: 'K', latinName: 'Kalium', number: 19, name: 'Potassium', weight: 39.948});
+4)function $(tagName)
+{
+	return document.createElement(tagName);
+} $$$$$$$$$4
+5)
+ var elemOptions = [{ abbr: 'K', latinName: 'Kalium', number: 19, name: 'Potassium', weight: 39.948},
+                    { abbr: 'Cs', latinName: 'Caesium', number: 20, name: 'Calcium', weight: 40.078},
+                    { abbr: 'Sc', latinName: 'none', number: 21, name: 'Scandium', weight: 44.955912},
+                    { abbr: 'Ti', latinName: 'Thallium', number: 22, name: 'Titanium', weight: 47.867},
+                    { abbr: 'V', latinName: 'none', number: 23, name: 'Vanadium', weight: 50.9415},
+                    { abbr: 'Cr', latinName: 'none', number: 24, name: 'Chromium', weight: 51.9961},
+                    { abbr: 'Mn', latinName: 'none', number: 25, name: 'Manganese', weight: 54.93045},
+                    { abbr: 'Fe', latinName: 'none', number: 26, name: 'Iron', weight: 55.845},
+                    { abbr: 'Co', latinName: 'Kobold', number: 27, name: 'Cobalt', weight: 58.933195},
+                    { abbr: 'Ni', latinName: 'none', number: 28, name: 'Nickel', weight: 58.6934},
+                    { abbr: 'Cu', latinName: 'none', number: 29, name: 'Copper', weight: 63.546},
+                    { abbr: 'Zn', latinName: 'none', number: 30, name: 'Zinc', weight: 65038},
+                    { abbr: 'Ga', latinName: 'Gallium', number: 31, name: 'Gallium', weight: 69.723},
+                    { abbr: 'Ge', latinName: 'Germanium', number: 32, name: 'Germanium', weight: 72.63},
+                    { abbr: 'As', latinName: 'Arsenicum', number: 33, name: 'Arsenic', weight: 74.9216},
+                    { abbr: 'Se', latinName: 'Selenium', number: 34, name: 'Selenium', weight: 78.96},
+                    { abbr: 'Br', latinName: 'Bromum', number: 35, name: 'Bromine', weight: 79.904},
+                    { abbr: 'Kr', latinName: 'Kryptonum', number: 36, name: 'Krypton', weight: 83.798}];4
+6)<script>
+        
+    for( var i = 0; i < elemOptions.length; i++)
+    {
+        createElementTile(elemOptions[i]);
+    }
+                       
+    function createElementTile(options)
+    {
+        var $section, $ruby, $rb, $rt, $samp, $ins;
+        
+        $section = $('section');
+        $ruby = $('ruby');
+                
+        $rb = $('rb');
+        $rb.text(options.abbr);//text
+        $rb.attr('title', options.latinName);
+        $ruby.append($rb);//append
+        
+        $rt = $('rt');
+        $rt.text(options.number);
+        $ruby.append($rt);
+        
+        $samp = $('samp');
+        $samp.text(options.name);
+        
+        $ins = $('ins');
+        $ins.text(options.weight);
+        
+        $section.append($ruby);
+        $section.append($samp);
+        $section.append($ins);
+        document.body.append($section); 
+    }
+    function createRow(options)
+        {
+            var $article;
+            $article = $('article');
+        }
+
+....)
+// 		if ($div.style.zoom === '1') {
+	// 			$div.className = this.className + '_container class'
+	// 			$div.style.zoom = '1.5';
+	// 		}else {
+	// 			if($div.className === (this.className + '_container class')){
+	// 				$div.style.zoom = '1';
+	// 			}
+	// 		}
+	// }//////////////div i haytnvel
+    </script>
+/////////////))))))))
+$section.on('mouseover', function(mouseOver) {
+    
+        if($div.css('display') === 'none') {
+            $div
+            .toggleClass(this.prop('className'))
+            .toggleClass('class')
+            .css('display', 'inline-block')
+            .html(this.html());
+        } else {
+        if($div.prop('className') === (this.prop('className') + ' class')) {
+            $section.on('mouseout', function(mouseOut) {
+                $div.css('display', 'none');
+            });
+            
+        } else {
+            $div
+                .toggleClass(this.prop('className'))
+                .toggleClass('class')
+                .html(this.html());
+         }
+       }
+    }); /// hover
+
