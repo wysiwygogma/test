@@ -1,3 +1,4 @@
+blya blya
 2) var section01 = document.createElement('section');
  //    var ruby01 = document.createElement('ruby');
  //    var rb = document.createElement('rb');
